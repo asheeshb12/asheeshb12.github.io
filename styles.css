@@ -1334,3 +1334,41 @@ footer {
 .page-home .highlights-list li:nth-child(4n) .hl-date { color: #1f8a5f; background: #e8f6ef; border-color: #c4e5d3; }
 .page-home .highlights-list strong { color: #14375e; font-weight: 700; }
 .page-home .contact-btn { font-size: 1rem; font-weight: 700; }
+
+/* ---------- Phone header fix: wrap the menu instead of side-scrolling, keep "Welcome!" clear of the name ---------- */
+@media (max-width: 680px) {
+  .site-hero-header {
+    min-height: 360px;
+  }
+  .hero-welcome {
+    top: 2.8rem;
+    transform: translateX(-50%);
+    font-size: 1.15rem;
+    padding: 0.4rem 1.2rem 0.5rem;
+  }
+  .hero-top-bar {
+    bottom: 0.5rem;
+    padding: 0.6rem 0;
+  }
+  .hero-nav-inner {
+    margin-bottom: 0;
+    gap: 0.6rem;
+  }
+  .hero-site-name {
+    font-size: 1.6rem;
+    padding-left: 1rem;
+  }
+  .hero-nav {
+    overflow-x: visible;
+    padding: 0 1rem;
+  }
+  .hero-nav ul {
+    flex-wrap: wrap;
+    gap: 0.45rem;
+  }
+  .hero-nav a {
+    font-size: 0.7rem;
+    padding: 0.32rem 0.6rem;
+    letter-spacing: 0.03em;
+  }
+}
