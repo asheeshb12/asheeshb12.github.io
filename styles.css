@@ -1274,3 +1274,86 @@ footer {
 .page-contact .contact-value { flex: 1 1 18rem; font-size: 1.15rem; font-weight: 500; color: #222; line-height: 1.55; }
 .page-contact .contact-value a { color: var(--cc); font-weight: 600; }
 @media (max-width: 600px) { .page-contact .bio p { font-size: 1.12rem; } .page-contact .contact-label { flex-basis: 100%; } }
+
+/* =====================================================================
+   Publications + Home: same colour-coded style
+   ===================================================================== */
+
+/* ---------- Publications ---------- */
+.page-pubs main h2 a { color: inherit; border-bottom: none; }
+.page-pubs main h2 a:hover { text-decoration: underline; }
+.page-pubs .pub-row {
+  --pc: #1a5f9e;
+  background: var(--color-card);
+  border: 1px solid var(--color-line);
+  border-left: 6px solid var(--pc);
+  border-radius: 6px;
+  padding: 1.3rem 1.5rem;
+  margin-bottom: 1.3rem;
+  transition: box-shadow .15s ease;
+}
+.page-pubs .pub-row:hover { box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08); }
+.page-pubs .pub-row:nth-of-type(1) { --pc: #1a5f9e; }
+.page-pubs .pub-row:nth-of-type(2) { --pc: #d9822b; }
+.page-pubs .pub-row:nth-of-type(3) { --pc: #2f9e5f; }
+.page-pubs .pub-row:nth-of-type(4) { --pc: #7a4fb0; }
+.page-pubs .publication-title {
+  font-size: 1.22rem !important;
+  font-weight: 700 !important;
+  line-height: 1.45;
+  color: #14375e;
+}
+.page-pubs .pub-content em { color: var(--pc); font-weight: 600; }
+.page-pubs .pub-content > article > div[style*="color: var(--color-muted)"] {
+  font-size: 1.05rem !important;
+  color: var(--pc) !important;
+}
+.page-pubs .pub-content p[style] {
+  font-size: 1.04rem !important;
+  line-height: 1.7 !important;
+  color: #333 !important;
+}
+.page-pubs .pub-badge[style], .page-pubs .pub-badge {
+  font-size: 0.78rem; font-weight: 700; border-radius: 999px; padding: 0.22rem 0.8rem;
+}
+.page-pubs .pub-link { font-weight: 600; font-size: 0.98rem; color: var(--pc); }
+.page-pubs .sim-label-side { font-size: 0.7rem; }
+
+/* ---------- Home ---------- */
+.page-home .bio-col { font-size: 1.08rem; line-height: 1.8; color: #2c2c2c; }
+.page-home .bio-lead {
+  font-size: 1.3rem; line-height: 1.7; font-weight: 500; color: #14375e;
+  border-left: 6px solid #d9822b; padding-left: 1.1rem;
+}
+.page-home .bio-col strong { color: #1a5f9e; font-weight: 700; }
+.page-home .profile-col { border-top: 5px solid #1a5f9e; }
+.page-home .profile-title {
+  font-family: var(--font-display);
+  font-size: 1.5rem !important; font-weight: 700 !important; color: #d9822b !important;
+  text-transform: none !important; letter-spacing: 0 !important;
+}
+.page-home .profile-affiliation { font-size: 1rem; line-height: 1.6; color: #333; }
+.page-home .profile-affiliation strong { color: #14375e; }
+.page-home .bio-interests-label {
+  font-size: 0.85rem; letter-spacing: 0.12em; color: #7a4fb0; margin-top: 2rem;
+}
+.page-home .research-interests li {
+  font-size: 0.95rem; font-weight: 600; padding: 0.4rem 1rem;
+  background: #eaf3fb; border-color: #c9def0; color: #1a5f9e;
+}
+.page-home .research-interests li:nth-child(2) { background: #f4eefb; border-color: #dccbef; color: #7a4fb0; }
+.page-home .research-interests li:nth-child(3) { background: #e8f6ef; border-color: #c4e5d3; color: #1f8a5f; }
+.page-home .research-interests li:nth-child(4) { background: #fdf1e3; border-color: #f2d6b0; color: #b4651a; }
+
+.page-home .highlights-col { border-top: 5px solid #d9822b; padding: 1.5rem 1.5rem 1rem; }
+.page-home .highlights-col-title { font-size: 0.85rem; color: #d9822b; letter-spacing: 0.12em; }
+.page-home .highlights-list { font-size: 1rem; line-height: 1.6; }
+.page-home .hl-date {
+  font-size: 0.78rem; border-radius: 999px; padding: 0.18rem 0.7rem;
+  color: #1a5f9e; background: #eaf3fb; border: 1px solid #c9def0;
+}
+.page-home .highlights-list li:nth-child(4n+2) .hl-date { color: #b4651a; background: #fdf1e3; border-color: #f2d6b0; }
+.page-home .highlights-list li:nth-child(4n+3) .hl-date { color: #7a4fb0; background: #f4eefb; border-color: #dccbef; }
+.page-home .highlights-list li:nth-child(4n) .hl-date { color: #1f8a5f; background: #e8f6ef; border-color: #c4e5d3; }
+.page-home .highlights-list strong { color: #14375e; font-weight: 700; }
+.page-home .contact-btn { font-size: 1rem; font-weight: 700; }
