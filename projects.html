@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Research projects by Ashish Bhattarai — Scientific Machine Learning, Deep Convection Initiation, Atmospheric Modeling, and Remote Sensing.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://asheeshb12.github.io/projects.html">
+    <title>Projects — Ashish Bhattarai</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Atmospheric Cloud Hero Banner covering ~1/4 of page with both clouds and floor visible -->
+    <header class="site-hero-header">
+        <div class="hero-top-bar">
+            <div class="container hero-nav-inner">
+                <a href="index.html" class="hero-site-name">Ashish Bhattarai</a>
+                <nav class="hero-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="projects.html" class="active">Projects</a></li>
+                        <li><a href="presentations.html">Presentation &amp; Involvements</a></li>
+                        <li><a href="cv.html">CV</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="container hero-banner-content">
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <h2 class="projects-heading">Major Projects Led or Contributed To</h2>
+
+            <div class="projects-grid">
+
+                <!-- Project 1 -->
+                <article class="project-card">
+                    <div class="project-card-header">
+                        <h2 class="project-title" style="margin: 0; padding: 0; border: none;">Uncertainty-Aware ML for Deep Convection Initiation</h2>
+                        <span class="project-tag highlight">GRL 2026 &bull; Lead Author</span>
+                    </div>
+                    <p class="project-description">
+                        Predicting the precise onset of deep convection remains a fundamental challenge in numerical weather forecasting. 
+                        In this project, we designed uncertainty-aware machine learning frameworks to investigate under what specific 
+                        atmospheric thermodynamic and dynamic conditions trigger predictions are most reliable. The models were evaluated 
+                        against high-resolution DOE ARM Southern Great Plains (SGP) observations and kilometer-scale hydroclimate reanalysis datasets.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-pill">Uncertainty Quantification (UQ)</span>
+                        <span class="tech-pill">Deep Learning</span>
+                        <span class="tech-pill">DOE ARM Observations</span>
+                        <span class="tech-pill">Kilometer-Scale Reanalysis</span>
+                        <span class="tech-pill">Python / xarray</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://doi.org/10.1029/2026GL123315" target="_blank" rel="noopener" class="pub-link">
+                            Read Paper (Geophysical Research Letters) &nearr;
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card">
+                    <div class="project-card-header">
+                        <h2 class="project-title" style="margin: 0; padding: 0; border: none;">Interpretable Latent Space of Storm Morphology</h2>
+                        <span class="project-tag ml">Deep Generative AI &bull; AGU 2026</span>
+                    </div>
+                    <p class="project-description">
+                        Traditional meteorological metrics often condense complex storm structures into simple scalars (e.g., echo tops or total precipitation), 
+                        losing critical morphological context. We developed deep generative architectures—specifically Two-Head &beta;-Variational 
+                        Autoencoders (TwoHeadVAE) and Vision Transformers (ViT)—paired with Pareto-front multi-objective optimization to learn 
+                        disentangled, physically interpretable latent representations of 2D radar-observed storm systems from NOAA MRMS datasets.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-pill">Two-Head &beta;-VAE</span>
+                        <span class="tech-pill">Vision Transformers (ViT)</span>
+                        <span class="tech-pill">Pareto-Front Optimization</span>
+                        <span class="tech-pill">NOAA MRMS Radar</span>
+                        <span class="tech-pill">PyTorch</span>
+                    </div>
+                    <div class="project-links">
+                        <span class="pub-badge">AGU 2026 Presentation</span>
+                        <a href="https://doi.org/10.5194/egusphere-egu26-8710" target="_blank" rel="noopener" class="pub-link">Related EGU Abstract &nearr;</a>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card">
+                    <div class="project-card-header">
+                        <h2 class="project-title" style="margin: 0; padding: 0; border: none;">Coupled WRF-CAMx Planetary Boundary Layer &amp; Ozone Dynamics</h2>
+                        <span class="project-tag highlight">Atmos. Environ. 2026 &bull; Best Poster Award</span>
+                    </div>
+                    <p class="project-description">
+                        Investigated offshore planetary boundary layer height (PBLH) and photochemical surface ozone formation during the NASA/TCEQ 
+                        TRACER-AQ field campaign in the Houston-Galveston region. Leveraged coupled WRF and CAMx numerical modeling to assess 
+                        how complex cloud conditions, marine-terrestrial interfaces, and local meteorology affect air quality simulations.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-pill">WRF (Numerical Weather Prediction)</span>
+                        <span class="tech-pill">CAMx (Air Quality Model)</span>
+                        <span class="tech-pill">SODAR RASS &amp; UAVs</span>
+                        <span class="tech-pill">TRACER-AQ Field Data</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://doi.org/10.1016/j.atmosenv.2026.122250" target="_blank" rel="noopener" class="pub-link">Read Paper (Atmospheric Environment) &nearr;</a>
+                    </div>
+                </article>
+
+                <!-- Project 4 -->
+                <article class="project-card">
+                    <div class="project-card-header">
+                        <h2 class="project-title" style="margin: 0; padding: 0; border: none;">PACE OCI, TEMPO &amp; TROPOMI Satellite NO₂ Validation</h2>
+                        <span class="project-tag">Remote Sensing &bull; Under Review</span>
+                    </div>
+                    <p class="project-description">
+                        Conducted an extensive evaluation of newly available total column NO₂ measurements from NASA’s PACE Ocean Color Instrument (OCI), 
+                        comparing them against ground-based Pandora spectrometer observations across the contiguous United States, as well as 
+                        geostationary TEMPO and polar-orbiting TROPOMI satellite retrievals.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-pill">PACE OCI</span>
+                        <span class="tech-pill">NASA TEMPO</span>
+                        <span class="tech-pill">ESA TROPOMI</span>
+                        <span class="tech-pill">Pandora Spectrometry</span>
+                        <span class="tech-pill">Satellite Validation</span>
+                    </div>
+                    <div class="project-links">
+                        <span class="pub-badge under-review">Manuscript Under Review (Atmospheric Environment)</span>
+                    </div>
+                </article>
+
+                <!-- Project 5 -->
+                <article class="project-card">
+                    <div class="project-card-header">
+                        <h2 class="project-title" style="margin: 0; padding: 0; border: none;">Climato-Environmental Disease Mapping &amp; Groundwater Analysis</h2>
+                        <span class="project-tag">Nepal &bull; Published Research</span>
+                    </div>
+                    <p class="project-description">
+                        At Tribhuvan University's NARERL laboratory, developed high-resolution spatial vulnerability maps for vector-borne disease transmission 
+                        (malaria risk zones) across Nepal based on climate and environmental variables. Additionally, conducted spatial modeling of groundwater 
+                        table fluctuations in eastern Nepal, published in the <em>Journal of Nepal Physical Society</em>.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-pill">GIS (ArcGIS / QGIS)</span>
+                        <span class="tech-pill">Climate-Disease Mapping</span>
+                        <span class="tech-pill">Spatial Hydrology</span>
+                        <span class="tech-pill">R / Geostatistics</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://doi.org/10.3126/jnphyssoc.v8i3.50724" target="_blank" rel="noopener" class="pub-link">Groundwater Paper &nearr;</a>
+                    </div>
+                </article>
+
+                <!-- Project 6 -->
+                <article class="project-card">
+                    <div class="project-card-header">
+                        <h2 class="project-title" style="margin: 0; padding: 0; border: none;">Agentic AI Workflows for Earth System Science</h2>
+                        <span class="project-tag ml">AI Agents &bull; Mentorship Project</span>
+                    </div>
+                    <p class="project-description">
+                        Exploring the application of autonomous Agentic AI frameworks to automate scientific workflows in meteorology and atmospheric science. 
+                        This includes multi-tool orchestration for downloading, regridding, and synthesizing petabyte-scale climate reanalysis data, 
+                        with active verification of physical conservation laws. Mentoring undergraduate student researchers on this project at UH.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-pill">Agentic AI</span>
+                        <span class="tech-pill">LLM Multi-Agent Systems</span>
+                        <span class="tech-pill">Automated Data Pipelines</span>
+                        <span class="tech-pill">Earth Science Workflows</span>
+                    </div>
+                    <div class="project-links">
+                        <span class="pub-badge">Active Research &amp; Mentorship</span>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            &copy; 2026 Ashish Bhattarai &bull; Department of Earth and Atmospheric Sciences, University of Houston
+        </div>
+    </footer>
+</body>
+</html>
