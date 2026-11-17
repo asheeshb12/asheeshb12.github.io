@@ -38,8 +38,8 @@ html {
 
 body {
   font-family: var(--font-body);
-  font-weight: 300;
-  font-size: 16px;
+  font-weight: 400;
+  font-size: 17px;
   line-height: 1.7;
   color: var(--color-text);
   background-color: var(--color-bg);
@@ -1208,3 +1208,69 @@ footer {
   .page-proj .project-card { padding: 1.2rem 1.1rem; }
   .page-pres main h2 { font-size: 1.7rem; }
 }
+
+/* ---------- Larger type on Projects / Presentations / CV / Contact ---------- */
+.page-proj .project-description { font-size: 1.1rem; line-height: 1.7; }
+.page-proj .project-lead { font-weight: 500; color: #111; }
+.page-proj .project-tag, .page-proj .project-tag.highlight, .page-proj .project-tag.ml { font-size: 0.78rem; }
+.page-proj .tech-pill { font-size: 0.84rem; }
+.page-proj .pub-link, .page-proj .pub-badge { font-size: 0.95rem; }
+.page-proj .project-more { margin-top: 0.4rem; }
+.page-proj .project-more summary {
+  cursor: pointer; font-weight: 700; font-size: 0.95rem; color: var(--pc);
+  list-style: none; display: inline-block; padding: 0.1rem 0;
+}
+.page-proj .project-more summary::-webkit-details-marker { display: none; }
+.page-proj .project-more summary::after { content: " \25BE"; }
+.page-proj .project-more[open] summary::after { content: " \25B4"; }
+.page-proj .project-more .project-description { margin-top: 0.4rem; }
+
+.page-pres .presentation-title, .page-pres .cv-entry-title { font-size: 1.22rem; }
+.page-pres .presentation-venue { font-size: 1.02rem; }
+.page-pres .cv-entry-org { font-size: 1.05rem; }
+.page-pres .cv-entry li { font-size: 1.04rem; }
+.page-pres .cv-entry-date { font-size: 0.85rem; }
+.page-pres .award-badge { font-size: 0.8rem; }
+
+/* more heading colours for the longer CV page */
+.page-cv main h2:nth-of-type(5) { --hc: #c2410c; }
+.page-cv main h2:nth-of-type(6) { --hc: #1f8a8a; }
+.page-cv main h2:nth-of-type(7) { --hc: #b4651a; }
+.page-cv main h2:nth-of-type(8) { --hc: #5b6ad0; }
+.page-cv .publication {
+  background: var(--color-card); border: 1px solid var(--color-line);
+  border-left: 4px solid #cfd8e3; border-radius: 6px;
+  padding: 1rem 1.3rem; margin-bottom: 1rem;
+}
+.page-cv .publication-title { font-size: 1.1rem; font-weight: 600; line-height: 1.5; color: #14375e; }
+.page-cv .skills-grid dt { color: #1a5f9e; font-weight: 700; font-size: 1.02rem; }
+.page-cv .skills-grid dd { font-size: 1.04rem; color: #333; }
+.page-cv .pub-link { font-weight: 600; }
+
+/* ---------- Contact ---------- */
+.page-contact .bio { margin-top: 1.4rem; }
+.page-contact .bio p {
+  font-size: 1.3rem; line-height: 1.7; font-weight: 400; color: #14375e;
+  border-left: 6px solid #d9822b; padding-left: 1.1rem; max-width: 52rem;
+}
+.page-contact .contact-list { list-style: none; padding: 0; margin: 2rem 0 0; display: grid; gap: 1rem; max-width: 52rem; }
+.page-contact .contact-list li {
+  --cc: #1a5f9e;
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.4rem 1.4rem;
+  background: var(--color-card); border: 1px solid var(--color-line);
+  border-left: 6px solid var(--cc); border-radius: 6px; padding: 1.1rem 1.5rem;
+  transition: box-shadow .15s ease;
+}
+.page-contact .contact-list li:hover { box-shadow: 0 6px 18px rgba(0,0,0,.07); }
+.page-contact .contact-list li:nth-child(1) { --cc: #1a5f9e; }
+.page-contact .contact-list li:nth-child(2) { --cc: #2f9e5f; }
+.page-contact .contact-list li:nth-child(3) { --cc: #0a66c2; }
+.page-contact .contact-list li:nth-child(4) { --cc: #d9822b; }
+.page-contact .contact-list li:nth-child(5) { --cc: #7a4fb0; }
+.page-contact .contact-label {
+  flex: 0 0 9rem; font-size: 0.85rem; font-weight: 700; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--cc);
+}
+.page-contact .contact-value { flex: 1 1 18rem; font-size: 1.15rem; font-weight: 500; color: #222; line-height: 1.55; }
+.page-contact .contact-value a { color: var(--cc); font-weight: 600; }
+@media (max-width: 600px) { .page-contact .bio p { font-size: 1.12rem; } .page-contact .contact-label { flex-basis: 100%; } }
