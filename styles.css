@@ -1106,10 +1106,6 @@ footer {
   line-height: 1.15;
 }
 .page-pres main h2:first-of-type { margin-top: 1.2rem; }
-.page-pres main h2:nth-of-type(1) { --hc: #1a5f9e; }
-.page-pres main h2:nth-of-type(2) { --hc: #d9822b; }
-.page-pres main h2:nth-of-type(3) { --hc: #7a4fb0; }
-.page-pres main h2:nth-of-type(4) { --hc: #1f8a5f; }
 
 .page-pres .presentation-item,
 .page-pres .cv-entry {
@@ -1227,10 +1223,6 @@ footer {
 .page-pres .award-badge { font-size: 0.8rem; }
 
 /* more heading colours for the longer CV page */
-.page-cv main h2:nth-of-type(5) { --hc: #c2410c; }
-.page-cv main h2:nth-of-type(6) { --hc: #1f8a8a; }
-.page-cv main h2:nth-of-type(7) { --hc: #b4651a; }
-.page-cv main h2:nth-of-type(8) { --hc: #5b6ad0; }
 .page-cv .publication {
   background: var(--color-card); border: 1px solid var(--color-line);
   border-left: 4px solid #cfd8e3; border-radius: 6px;
@@ -1256,11 +1248,6 @@ footer {
   transition: box-shadow .15s ease;
 }
 .page-contact .contact-list li:hover { box-shadow: 0 6px 18px rgba(0,0,0,.07); }
-.page-contact .contact-list li:nth-child(1) { --cc: #1a5f9e; }
-.page-contact .contact-list li:nth-child(2) { --cc: #2f9e5f; }
-.page-contact .contact-list li:nth-child(3) { --cc: #0a66c2; }
-.page-contact .contact-list li:nth-child(4) { --cc: #d9822b; }
-.page-contact .contact-list li:nth-child(5) { --cc: #7a4fb0; }
 .page-contact .contact-label {
   flex: 0 0 9rem; font-size: 0.85rem; font-weight: 700; letter-spacing: 0.08em;
   text-transform: uppercase; color: var(--cc);
@@ -1287,10 +1274,6 @@ footer {
   transition: box-shadow .15s ease;
 }
 .page-pubs .pub-row:hover { box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08); }
-.page-pubs .pub-row:nth-of-type(1) { --pc: #1a5f9e; }
-.page-pubs .pub-row:nth-of-type(2) { --pc: #d9822b; }
-.page-pubs .pub-row:nth-of-type(3) { --pc: #2f9e5f; }
-.page-pubs .pub-row:nth-of-type(4) { --pc: #7a4fb0; }
 .page-pubs .publication-title {
   font-size: 1.22rem !important;
   font-weight: 700 !important;
