@@ -1375,6 +1375,7 @@ footer {
 
 /* Home intro paragraph: all black text */
 .page-home .bio-lead,
-.page-home .bio-lead strong,
-.page-home .bio-lead a { color: #000; }
-.page-home .bio-lead a { border-bottom: 1px solid #000; }
+.page-home .bio-lead strong { color: #000; }
+.page-home .bio-lead a,
+.page-home .bio-lead a strong { color: #1a5f9e; }
+.page-home .bio-lead a { border-bottom: 1px solid #1a5f9e; }
